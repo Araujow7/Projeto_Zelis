@@ -18,9 +18,10 @@ public class BancoInicialTestes : IDisposable
         "inventario_item", "pendencia", "venda", "venda_item", "log_acesso"
     ];
 
+    // Ignora as tabelas internas do SQLite (sqlite_*) e do EF Core (__EFMigrationsHistory, __EFMigrationsLock).
     private const string SqlTabelas =
         "SELECT name FROM sqlite_master WHERE type = 'table' " +
-        "AND name NOT LIKE 'sqlite_%' AND name <> '__EFMigrationsHistory' ORDER BY name";
+        "AND name NOT LIKE 'sqlite\\_%' ESCAPE '\\' AND name NOT LIKE '\\_\\_EF%' ESCAPE '\\' ORDER BY name";
 
     public void Dispose() => _banco.Dispose();
 

@@ -1,0 +1,27 @@
+# Compilação
+bin/
+obj/
+[Rr]elease/
+[Dd]ebug/
+publish/
+*.user
+*.suo
+
+# Visual Studio / VS Code / Rider
+.vs/
+.vscode/
+.idea/
+
+# Banco de dados local (nunca vai para o repositório: contém dados da loja)
+*.db
+*.db-wal
+*.db-shm
+dados/
+
+# Testes
+TestResults/
+coverage*/
+
+# Sistema
+Thumbs.db
+.DS_Store

@@ -7,6 +7,8 @@
     <!-- Banco de dados -->
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.10" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.10" />
+    <!-- Força o SQLite nativo corrigido: a 2.1.11, que vem com o EF Core, tem a falha GHSA-2m69-gcr7-jv3q -->
+    <PackageVersion Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.14" />
 
     <!-- Testes -->
     <PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing" Version="10.0.10" />

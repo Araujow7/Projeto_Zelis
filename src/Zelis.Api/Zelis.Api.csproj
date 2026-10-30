@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <!-- Servidor do Zelis: única porta de entrada para o banco de dados. -->
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zelis.Dados\Zelis.Dados.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Necessário para o comando "dotnet ef" usar a API como projeto de inicialização -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

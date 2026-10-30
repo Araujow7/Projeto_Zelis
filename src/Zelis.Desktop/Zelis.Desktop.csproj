@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- WMS para Windows (.exe). Fala só com a API, nunca com o banco. -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>Zelis</AssemblyName>
+    <RootNamespace>Zelis.Desktop</RootNamespace>
+    <Product>Zelis WMS</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Compartilhado\**\*.cs" Link="Compartilhado\%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

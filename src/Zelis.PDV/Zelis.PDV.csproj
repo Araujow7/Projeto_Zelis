@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- PDV separado (.exe). Fala com o WMS só pela API. -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>ZelisPDV</AssemblyName>
+    <RootNamespace>Zelis.PDV</RootNamespace>
+    <Product>Zelis PDV</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Compartilhado\**\*.cs" Link="Compartilhado\%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

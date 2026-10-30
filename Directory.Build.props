@@ -1,0 +1,16 @@
+<Project>
+  <!-- Configuração comum a todos os projetos do Zelis -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+
+    <!-- Versão exibida no rodapé do sistema (fase 0 = v0.1) -->
+    <Version>0.1.0</Version>
+    <Company>Zelis</Company>
+    <Product>Zelis WMS</Product>
+    <Authors>Wellerson De Araújo Caldas</Authors>
+    <NeutralLanguage>pt-BR</NeutralLanguage>
+  </PropertyGroup>
+</Project>

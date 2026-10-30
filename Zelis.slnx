@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Zelis.Api/Zelis.Api.csproj" />
+    <Project Path="src/Zelis.Dados/Zelis.Dados.csproj" />
+    <Project Path="src/Zelis.Desktop/Zelis.Desktop.csproj" />
+    <Project Path="src/Zelis.Dominio/Zelis.Dominio.csproj" />
+    <Project Path="src/Zelis.PDV/Zelis.PDV.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Zelis.Testes/Zelis.Testes.csproj" />
+  </Folder>
+</Solution>

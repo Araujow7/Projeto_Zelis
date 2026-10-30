@@ -1,0 +1,3 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Regras de negócio e entidades. Sem dependência de banco ou de tela. -->
+</Project>
